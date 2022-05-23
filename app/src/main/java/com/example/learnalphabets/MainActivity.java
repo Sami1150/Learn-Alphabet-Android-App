@@ -14,8 +14,8 @@ import java.util.List;
 
 
 public class MainActivity extends AppCompatActivity{
-Button repo,learn,takeTest;
-Button learnCus;
+    Button repo,learn,takeTest;
+    Button learnCus;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,16 +30,22 @@ Button learnCus;
     public void onClick(View view) {
         if(view.getId()==R.id.Repo)
         {
-            String url= "https://github.com/Sami1150/alphabetsApp-MC";
+            String url= "https://github.com/Sami1150/LearnAlphabets";
             Uri uri= Uri.parse(url);
             Intent intent2=new Intent(Intent.ACTION_VIEW,uri);
             startActivity(intent2);
         }else if(R.id.Learn==view.getId())
         {
-
+            Intent intent2=new Intent(MainActivity.this,LearnAlphabets.class);
+            startActivity(intent2);
         }else if(R.id.Test==view.getId())
         {
-            
+            Intent intent2=new Intent(MainActivity.this,TakeTest.class);
+            startActivity(intent2);
+        }else if(R.id.learnCus==view.getId())
+        {
+            Intent intent2=new Intent(MainActivity.this,CustomizedView.class);
+            startActivity(intent2);
         }
     }
 
