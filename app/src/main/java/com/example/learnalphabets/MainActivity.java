@@ -36,16 +36,16 @@ public class MainActivity extends AppCompatActivity{
             startActivity(intent2);
         }else if(R.id.Learn==view.getId())
         {
-            Intent intent2=new Intent(MainActivity.this,LearnAlphabets.class);
-            startActivity(intent2);
+            //Intent intent2=new Intent(MainActivity.this,LearnAlphabets.class);
+            //startActivity(intent2);
         }else if(R.id.Test==view.getId())
         {
             Intent intent2=new Intent(MainActivity.this,TakeTest.class);
             startActivity(intent2);
         }else if(R.id.learnCus==view.getId())
         {
-            Intent intent2=new Intent(MainActivity.this,CustomizedView.class);
-            startActivity(intent2);
+            //Intent intent2=new Intent(MainActivity.this,CustomizedView.class);
+            //startActivity(intent2);
         }
     }
 
