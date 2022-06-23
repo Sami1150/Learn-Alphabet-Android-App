@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.LearnAlphabets">
         <activity
+            android:name=".pattern"
+            android:exported="false" />
+        <activity
             android:name=".CustomizeView"
             android:exported="false" />
         <activity
@@ -20,9 +23,6 @@
             android:exported="false" />
         <activity
             android:name=".TakeTest"
-            android:exported="false" />
-        <activity
-            android:name=".pattern"
             android:exported="false" />
         <activity
             android:name=".CustomizedView"
